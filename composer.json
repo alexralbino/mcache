@@ -1,0 +1,23 @@
+{
+    "name": "mixdinternet/mcache",
+    "description": "Pacote de limpeza de cache / otimização da aplicação",
+    "keywords": ["laravel", "cache", "otimização"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Irineu Martins Junior",
+            "email": "irineu@mixd.com.br",
+            "homepage": "http://www.mixd.com.br/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mixdinternet\\Mcache\\": "src/"
+        }
+    }
+}
