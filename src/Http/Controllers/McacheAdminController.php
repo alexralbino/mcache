@@ -33,10 +33,12 @@ class McacheAdminController extends AdminController
                 break;
 
             case "images":
-                Flash::error('Não configurado ainda - Limpeza do cache das imagens concluído.');
+                Artisan::call('image:clear');
+                Flash::success('Limpeza do cache das imagens concluído.');
                 break;
 
             case "views":
+                Artisan::call('responsecache:clear');
                 Artisan::call('view:clear');
                 Flash::success('Limpeza do cache das views concluído.');
                 break;
