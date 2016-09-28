@@ -14,7 +14,7 @@ Adicione no seu composer.json
 
 ```js
   "require": {
-    "mixdinternet/mcache": "0.1.*"
+    "mixdinternet/mcache": "0.2.*"
   }
 ```
 
