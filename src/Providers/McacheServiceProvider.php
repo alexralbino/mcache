@@ -3,8 +3,7 @@
 namespace Mixdinternet\Mcache\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
-use Menu;
+use Pingpong\Menus\MenuFacade as Menu;
 
 class McacheServiceProvider extends ServiceProvider
 {
