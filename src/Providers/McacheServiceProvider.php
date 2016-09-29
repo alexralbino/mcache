@@ -7,11 +7,6 @@ use Pingpong\Menus\MenuFacade as Menu;
 
 class McacheServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap the application services.
-     *
-     * @return void
-     */
     public function boot()
     {
         $this->setMenu();
@@ -23,11 +18,6 @@ class McacheServiceProvider extends ServiceProvider
         $this->publish();
     }
 
-    /**
-     * Register the application services.
-     *
-     * @return void
-     */
     public function register()
     {
 
@@ -54,7 +44,7 @@ class McacheServiceProvider extends ServiceProvider
         if (!$this->app->routesAreCached()) {
             $this->app->router->group(['namespace' => 'Mixdinternet\Mcache\Http\Controllers'],
                 function () {
-                    require __DIR__ . '/../Http/routes.php';
+                    require __DIR__ . '/../routes/web.php';
                 });
         }
     }
