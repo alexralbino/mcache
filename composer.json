@@ -1,5 +1,5 @@
 {
-    "name": "mixdinternet/mcache",
+    "name": "alexralbino/mcache",
     "description": "Pacote de limpeza de cache / otimização da aplicação",
     "keywords": ["laravel", "cache", "otimização"],
     "license": "MIT",
@@ -12,8 +12,7 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "laravel/framework": "~5.0"
+        "php": ">=7.2"
     },
     "autoload": {
         "psr-4": {
